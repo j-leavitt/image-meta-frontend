@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppView when the app is not installed should render inline validation if the content type id is taken 1`] = `
+<div
+  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+  data-test-id="content-type-name"
+>
+  <div
+    class="TextField__TextField__label-wrapper___2-MJT"
+  >
+    <label
+      class="FormLabel__FormLabel___3d6zQ"
+      data-test-id="cf-ui-form-label"
+      for="content-type-name"
+    >
+      Content type name
+      <span
+        class="FormLabel__FormLabel__required-text___3mvdm"
+      >
+        (
+        required
+        )
+      </span>
+    </label>
+  </div>
+  <div
+    class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+  >
+    <input
+      aria-label="contentTypeName"
+      class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+      data-test-id="content-type-name-input"
+      id="content-type-name"
+      name="contentTypeName"
+      placeholder="e.g. Photo with Metadata"
+      required=""
+      value="Photo with Meta"
+    />
+  </div>
+  <div
+    class="TextField__TextField__hints___3Di2P"
+  >
+    <p
+      class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+      data-test-id="cf-ui-help-text"
+    >
+      You can use this content type to add metadata to images
+    </p>
+  </div>
+</div>
+`;
+
+exports[`AppView when the app is not installed should render inline validation if the content type id is taken 2`] = `
+<div
+  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+  data-test-id="content-type-id"
+>
+  <div
+    class="TextField__TextField__label-wrapper___2-MJT"
+  >
+    <label
+      class="FormLabel__FormLabel___3d6zQ"
+      data-test-id="cf-ui-form-label"
+      for="content-type-id"
+    >
+      Content type ID
+      <span
+        class="FormLabel__FormLabel__required-text___3mvdm"
+      >
+        (
+        required
+        )
+      </span>
+    </label>
+  </div>
+  <div
+    class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+  >
+    <input
+      aria-label="contentTypeId"
+      class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+      data-test-id="content-type-id-input"
+      id="content-type-id"
+      name="contentTypeId"
+      required=""
+      value="photoWithMeta"
+    />
+  </div>
+  <div
+    class="TextField__TextField__hints___3Di2P"
+  >
+    <p
+      class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+      data-test-id="cf-ui-help-text"
+    >
+      The ID is generated from the name, you can also set it manually
+    </p>
+  </div>
+</div>
+`;
+
+exports[`AppView when the app is not installed should render the app view with installation screen 1`] = `
+<div>
+  <div
+    class="Workbench__Workbench___THi9K css-uy5y4h"
+    data-test-id="cf-ui-workbench"
+  >
+    <div
+      class="Workbench__Workbench__content-wrapper___3yWKi"
+    >
+      <form
+        class="Form__Form___2zwZf"
+        data-test-id="cf-ui-form"
+      >
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <h1
+            class="Heading__Heading___83D3K"
+            data-test-id="cf-ui-heading"
+          >
+            About Image Meta
+          </h1>
+        </div>
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <p
+            class="Paragraph__Paragraph___2aO-9"
+            data-test-id="cf-ui-paragraph"
+          >
+            The Image Meta app automatically populates entry fields using metadata read from the associated image file.
+          </p>
+        </div>
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <h1
+            class="Heading__Heading___83D3K"
+            data-test-id="cf-ui-heading"
+          >
+            Configuration
+          </h1>
+          <p
+            class="Paragraph__Paragraph___2aO-9"
+            data-test-id="cf-ui-paragraph"
+          >
+            To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
+          </p>
+          <div
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            data-test-id="content-type-name"
+          >
+            <div
+              class="TextField__TextField__label-wrapper___2-MJT"
+            >
+              <label
+                class="FormLabel__FormLabel___3d6zQ"
+                data-test-id="cf-ui-form-label"
+                for="content-type-name"
+              >
+                Content type name
+                <span
+                  class="FormLabel__FormLabel__required-text___3mvdm"
+                >
+                  (
+                  required
+                  )
+                </span>
+              </label>
+            </div>
+            <div
+              class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+            >
+              <input
+                aria-label="contentTypeName"
+                class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                data-test-id="content-type-name-input"
+                id="content-type-name"
+                name="contentTypeName"
+                placeholder="e.g. Photo with Metadata"
+                required=""
+                value="Photo with Meta"
+              />
+            </div>
+            <div
+              class="TextField__TextField__hints___3Di2P"
+            >
+              <p
+                class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+                data-test-id="cf-ui-help-text"
+              >
+                You can use this content type to add metadata to images
+              </p>
+            </div>
+          </div>
+          <div
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            data-test-id="content-type-id"
+          >
+            <div
+              class="TextField__TextField__label-wrapper___2-MJT"
+            >
+              <label
+                class="FormLabel__FormLabel___3d6zQ"
+                data-test-id="cf-ui-form-label"
+                for="content-type-id"
+              >
+                Content type ID
+                <span
+                  class="FormLabel__FormLabel__required-text___3mvdm"
+                >
+                  (
+                  required
+                  )
+                </span>
+              </label>
+            </div>
+            <div
+              class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+            >
+              <input
+                aria-label="contentTypeId"
+                class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                data-test-id="content-type-id-input"
+                id="content-type-id"
+                name="contentTypeId"
+                required=""
+                value="photoWithMeta"
+              />
+            </div>
+            <div
+              class="TextField__TextField__hints___3Di2P"
+            >
+              <p
+                class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+                data-test-id="cf-ui-help-text"
+              >
+                The ID is generated from the name, you can also set it manually
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppView when the app is not installed when the app is installed should render the app view with configuration screen 1`] = `
+<div>
+  <div
+    class="Workbench__Workbench___THi9K css-uy5y4h"
+    data-test-id="cf-ui-workbench"
+  >
+    <div
+      class="Workbench__Workbench__content-wrapper___3yWKi"
+    >
+      <form
+        class="Form__Form___2zwZf"
+        data-test-id="cf-ui-form"
+      >
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <h1
+            class="Heading__Heading___83D3K"
+            data-test-id="cf-ui-heading"
+          >
+            About Image Meta
+          </h1>
+        </div>
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <p
+            class="Paragraph__Paragraph___2aO-9"
+            data-test-id="cf-ui-paragraph"
+          >
+            The Image Meta app automatically populates entry fields using metadata read from the associated image file.
+          </p>
+        </div>
+        <div
+          class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
+        >
+          <h1
+            class="Heading__Heading___83D3K"
+            data-test-id="cf-ui-heading"
+          >
+            Configuration
+          </h1>
+          <p
+            class="Paragraph__Paragraph___2aO-9"
+            data-test-id="cf-ui-paragraph"
+          >
+            To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
+          </p>
+          <div
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            data-test-id="content-type-name"
+          >
+            <div
+              class="TextField__TextField__label-wrapper___2-MJT"
+            >
+              <label
+                class="FormLabel__FormLabel___3d6zQ"
+                data-test-id="cf-ui-form-label"
+                for="content-type-name"
+              >
+                Content type name
+                <span
+                  class="FormLabel__FormLabel__required-text___3mvdm"
+                >
+                  (
+                  required
+                  )
+                </span>
+              </label>
+            </div>
+            <div
+              class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+            >
+              <input
+                aria-label="contentTypeName"
+                class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                data-test-id="content-type-name-input"
+                id="content-type-name"
+                name="contentTypeName"
+                placeholder="e.g. Photo with Metadata"
+                required=""
+                value="Photo with Meta"
+              />
+            </div>
+            <div
+              class="TextField__TextField__hints___3Di2P"
+            >
+              <p
+                class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+                data-test-id="cf-ui-help-text"
+              >
+                You can use this content type to add metadata to images
+              </p>
+            </div>
+          </div>
+          <div
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            data-test-id="content-type-id"
+          >
+            <div
+              class="TextField__TextField__label-wrapper___2-MJT"
+            >
+              <label
+                class="FormLabel__FormLabel___3d6zQ"
+                data-test-id="cf-ui-form-label"
+                for="content-type-id"
+              >
+                Content type ID
+                <span
+                  class="FormLabel__FormLabel__required-text___3mvdm"
+                >
+                  (
+                  required
+                  )
+                </span>
+              </label>
+            </div>
+            <div
+              class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+            >
+              <input
+                aria-label="contentTypeId"
+                class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                data-test-id="content-type-id-input"
+                id="content-type-id"
+                name="contentTypeId"
+                required=""
+                value="photoWithMeta"
+              />
+            </div>
+            <div
+              class="TextField__TextField__hints___3Di2P"
+            >
+              <p
+                class="HelpText__HelpText___uWbja TextField__TextField__help-text___p4rVf"
+                data-test-id="cf-ui-help-text"
+              >
+                The ID is generated from the name, you can also set it manually
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

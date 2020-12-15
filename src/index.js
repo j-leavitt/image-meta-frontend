@@ -2,13 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import {
-  AppExtensionSDK,
-  FieldExtensionSDK,
-  SidebarExtensionSDK,
-  DialogExtensionSDK,
-  EditorExtensionSDK,
-  PageExtensionSDK,
-  BaseExtensionSDK,
   init,
   locations
 } from 'contentful-ui-extensions-sdk';
@@ -17,12 +10,8 @@ import '@contentful/forma-36-fcss/dist/styles.css';
 import '@contentful/forma-36-tokens/dist/css/index.css';
 import './index.css';
 
-import Config from './components/ConfigScreen';
-import EntryEditor from './components/EntryEditor';
-import Page from './components/Page';
-import Sidebar from './components/Sidebar';
-import Field from './components/Field';
-import Dialog from './components/Dialog';
+import { AppView } from './components/AppView';
+import { MetadataView } from './components/MetadataView';
 
 import LocalhostWarning from './components/LocalhostWarning';
 
@@ -31,7 +20,7 @@ if (process.env.NODE_ENV === 'development' && window.self === window.top) {
   const root = document.getElementById('root');
   render(<LocalhostWarning />, root);
 } else {
-  init((sdk: BaseExtensionSDK) => {
+  init((sdk) => {
     const root = document.getElementById('root');
 
     // All possible locations for your app
@@ -40,27 +29,11 @@ if (process.env.NODE_ENV === 'development' && window.self === window.top) {
     const ComponentLocationSettings = [
       {
         location: locations.LOCATION_APP_CONFIG,
-        component: <Config sdk={(sdk as unknown) as AppExtensionSDK} />
-      },
-      {
-        location: locations.LOCATION_ENTRY_FIELD,
-        component: <Field sdk={(sdk as unknown) as FieldExtensionSDK} />
-      },
-      {
-        location: locations.LOCATION_ENTRY_EDITOR,
-        component: <EntryEditor sdk={(sdk as unknown) as EditorExtensionSDK} />
-      },
-      {
-        location: locations.LOCATION_DIALOG,
-        component: <Dialog sdk={(sdk as unknown) as DialogExtensionSDK} />
+        component: <AppView sdk={sdk} />
       },
       {
         location: locations.LOCATION_ENTRY_SIDEBAR,
-        component: <Sidebar sdk={(sdk as unknown) as SidebarExtensionSDK} />
-      },
-      {
-        location: locations.LOCATION_PAGE,
-        component: <Page sdk={(sdk as unknown) as PageExtensionSDK} />
+        component: <MetadataView sdk={sdk} />
       }
     ];
 
