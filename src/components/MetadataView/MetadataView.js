@@ -3,7 +3,6 @@ import { Paragraph, Button, Note, CheckboxField } from '@contentful/forma-36-rea
 import get from 'lodash/get';
 
 async function callAPI(url) {
-  console.log(`process.env.REACT_APP_API_URL`)
   const res = await fetch(`${process.env.REACT_APP_API_URL}/exif${url}`);
   const data = await res.json();
   return data.tags;
@@ -23,8 +22,6 @@ export class MetadataView extends React.Component {
       imageRequirementsNotMet: false,
       isFetchingTags: false
     }
-
-    // this.validateImage();
   }
 
   componentDidMount() {
