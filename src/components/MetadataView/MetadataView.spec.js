@@ -90,7 +90,7 @@ describe('MetadataView sidebar component', () => {
         fields: {file: { 'en-US': imgData }}
       }))
 
-      fetchMock.get(`http://localhost:4000/exif${expectedPath}`, {
+      fetchMock.get(`http://localhost:5000/exif${expectedPath}`, {
         tags: {
           title: 'some_title',
           description: 'some_description'

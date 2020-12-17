@@ -3,7 +3,8 @@ import { Paragraph, Button, Note, CheckboxField } from '@contentful/forma-36-rea
 import get from 'lodash/get';
 
 async function callAPI(url) {
-  const res = await fetch(`${process.env.API_URL}/exif${url}`);
+  console.log(`process.env.REACT_APP_API_URL`)
+  const res = await fetch(`${process.env.REACT_APP_API_URL}/exif${url}`);
   const data = await res.json();
   return data.tags;
 }
@@ -23,7 +24,7 @@ export class MetadataView extends React.Component {
       isFetchingTags: false
     }
 
-    this.validateImage();
+    // this.validateImage();
   }
 
   componentDidMount() {
@@ -44,10 +45,10 @@ export class MetadataView extends React.Component {
     const imageId = get(image.getValue(), 'sys.id');
     if (!imageId) { return; }
 
-    const file = await sdk.space.getAsset(imageId);
-    const locale = sdk.locales.default;
+    // const file = await sdk.space.getAsset(imageId);
+    // const locale = sdk.locales.default;
     // const contentType = get(file, `fields.file.${locale}.contentType`);
-    const details = get(file, `fields.file.${locale}.details`);
+    // const details = get(file, `fields.file.${locale}.details`);
 
     // test if file extension is PNG/JPEG/JPG
     // const isImageTypeValid = new RegExp(/^image\/(png|jpe?g)$/, 'i').test(contentType);
