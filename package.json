@@ -1,5 +1,5 @@
 {
-  "name": "image-meta",
+  "name": "image-meta-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "fetch-mock": "^9.11.0",
+    "node-fetch": "^2.6.1"
   }
 }

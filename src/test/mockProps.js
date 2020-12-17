@@ -1,6 +1,9 @@
 export default {
     sdk: {
         location: {},
+        locales: {
+            default: 'en-US'
+        },
         contentType: {},
         space: {},
         ids: {

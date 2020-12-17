@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MetadataView sidebar component Calling metadata API should fetch tags and render them on btn click 1`] = `
+<div>
+  <div>
+    <p
+      class="Paragraph__Paragraph___2aO-9"
+      data-test-id="cf-ui-paragraph"
+    >
+      Hello Sidebar Component
+    </p>
+    <button
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO"
+      data-test-id="cf-ui-button"
+      id="fetch-tag-btn"
+      type="button"
+    >
+      <span
+        class="TabFocusTrap__TabFocusTrap___39Vty Button__Button__inner-wrapper___3qrNC"
+        tabindex="-1"
+      >
+        <span
+          class="Button__Button__label___3tcOj"
+        >
+          Autofill Metadata
+        </span>
+        <svg
+          class="Spinner__Spinner___32lpa Button__Button__spinner___3j8Aj Spinner__Spinner--small___2hyo0 Spinner__Spinner--white___3Hsq3 Button__Button--spinner--exit___2RUI- Button__Button--spinner-exit-active___3HXa7"
+          data-test-id="cf-ui-spinner"
+          viewBox="0 0 60 51"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            class="Spinner__circle1--translate___1u68A"
+            transform="translate(10,33.528168)"
+          >
+            <g
+              class="Spinner__circle1--scale___38WqL"
+            >
+              <circle
+                id="circle1"
+                r="6"
+                transform="translate(0,10.471832)"
+              />
+            </g>
+          </g>
+          <g
+            class="Spinner__circle2--translate___1GBUJ"
+            transform="translate(30,33.528168)"
+          >
+            <g
+              class="Spinner__circle2--scale___3khDl"
+            >
+              <circle
+                id="circle2"
+                r="6"
+                transform="translate(0,10.471832)"
+              />
+            </g>
+          </g>
+          <g
+            class="Spinner__circle3--translate___2M3jS"
+            transform="translate(50,33.528168)"
+          >
+            <g
+              class="Spinner__circle3--scale___2zFhX"
+            >
+              <circle
+                id="circle3"
+                r="6"
+                transform="translate(0,10.471832)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </button>
+    <div
+      class="ControlledInputField__ControlledInputField___2uIG9"
+      data-test-id="cf-ui-checkbox-field"
+    >
+      <input
+        aria-label="Overwrite existing metadata"
+        checked=""
+        class="ControlledInput__ControlledInput___2XK3j ControlledInputField__ControlledInputField__input___3OMYB"
+        data-test-id="cf-ui-controlled-input"
+        id="overwrite-tags"
+        type="checkbox"
+        value=""
+      />
+      <div>
+        <label
+          class="FormLabel__FormLabel___3d6zQ ControlledInputField__ControlledInputField__label___a9J52"
+          data-test-id="cf-ui-form-label"
+          for="overwrite-tags"
+        >
+          Overwrite existing metadata
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MetadataView sidebar component should disable everything if theres no image 1`] = `
+<div>
+  <div>
+    <p
+      class="Paragraph__Paragraph___2aO-9"
+      data-test-id="cf-ui-paragraph"
+    >
+      Hello Sidebar Component
+    </p>
+    <button
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO Button__Button--disabled___1E20M"
+      data-test-id="cf-ui-button"
+      disabled=""
+      id="fetch-tag-btn"
+      type="button"
+    >
+      <span
+        class="TabFocusTrap__TabFocusTrap___39Vty Button__Button__inner-wrapper___3qrNC"
+        tabindex="-1"
+      >
+        <span
+          class="Button__Button__label___3tcOj"
+        >
+          Autofill Metadata
+        </span>
+      </span>
+    </button>
+    <div
+      class="ControlledInputField__ControlledInputField___2uIG9 ControlledInputField__ControlledInputField--disabled___HDWt6"
+      data-test-id="cf-ui-checkbox-field"
+    >
+      <input
+        aria-label="Overwrite existing metadata"
+        checked=""
+        class="ControlledInput__ControlledInput___2XK3j ControlledInputField__ControlledInputField__input___3OMYB ControlledInput__ControlledInput--disabled___3prPF"
+        data-test-id="cf-ui-controlled-input"
+        disabled=""
+        id="overwrite-tags"
+        type="checkbox"
+        value=""
+      />
+      <div>
+        <label
+          class="FormLabel__FormLabel___3d6zQ ControlledInputField__ControlledInputField__label___a9J52"
+          data-test-id="cf-ui-form-label"
+          for="overwrite-tags"
+        >
+          Overwrite existing metadata
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MetadataView sidebar component should enable everything if theres an image 1`] = `
+<div>
+  <div>
+    <p
+      class="Paragraph__Paragraph___2aO-9"
+      data-test-id="cf-ui-paragraph"
+    >
+      Hello Sidebar Component
+    </p>
+    <button
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO"
+      data-test-id="cf-ui-button"
+      id="fetch-tag-btn"
+      type="button"
+    >
+      <span
+        class="TabFocusTrap__TabFocusTrap___39Vty Button__Button__inner-wrapper___3qrNC"
+        tabindex="-1"
+      >
+        <span
+          class="Button__Button__label___3tcOj"
+        >
+          Autofill Metadata
+        </span>
+      </span>
+    </button>
+    <div
+      class="ControlledInputField__ControlledInputField___2uIG9"
+      data-test-id="cf-ui-checkbox-field"
+    >
+      <input
+        aria-label="Overwrite existing metadata"
+        checked=""
+        class="ControlledInput__ControlledInput___2XK3j ControlledInputField__ControlledInputField__input___3OMYB"
+        data-test-id="cf-ui-controlled-input"
+        id="overwrite-tags"
+        type="checkbox"
+        value=""
+      />
+      <div>
+        <label
+          class="FormLabel__FormLabel___3d6zQ ControlledInputField__ControlledInputField__label___a9J52"
+          data-test-id="cf-ui-form-label"
+          for="overwrite-tags"
+        >
+          Overwrite existing metadata
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
