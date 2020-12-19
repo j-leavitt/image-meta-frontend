@@ -3,6 +3,8 @@ import camelCase from 'lodash/camelCase';
 import { Heading, Form, Workbench, Paragraph } from '@contentful/forma-36-react-components';
 import { css } from 'emotion';
 
+import { styles } from './styles';
+
 import { InstallationContent } from './InstallationContent';
 import { ConfigurationContent } from './ConfigurationContent';
 
@@ -178,7 +180,7 @@ export class AppView extends Component {
     return (
       <Workbench className={css({ margin: '80px' })}>
         <Form>
-          <Heading>About Image Meta</Heading>
+          <Heading className={styles.heading}>About Image Meta</Heading>
           <Paragraph>
             The Image Meta app automatically populates entry fields using metadata read from the associated image file.
           </Paragraph>

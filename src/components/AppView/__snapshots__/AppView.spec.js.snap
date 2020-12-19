@@ -2,7 +2,7 @@
 
 exports[`AppView when the app is not installed should render inline validation if the content type id is taken 1`] = `
 <div
-  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
   data-test-id="content-type-name"
 >
   <div
@@ -52,7 +52,7 @@ exports[`AppView when the app is not installed should render inline validation i
 
 exports[`AppView when the app is not installed should render inline validation if the content type id is taken 2`] = `
 <div
-  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+  class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
   data-test-id="content-type-id"
 >
   <div
@@ -116,7 +116,7 @@ exports[`AppView when the app is not installed should render the app view with i
           class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
         >
           <h1
-            class="Heading__Heading___83D3K"
+            class="Heading__Heading___83D3K css-acwcvw"
             data-test-id="cf-ui-heading"
           >
             About Image Meta
@@ -136,7 +136,7 @@ exports[`AppView when the app is not installed should render the app view with i
           class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
         >
           <h1
-            class="Heading__Heading___83D3K"
+            class="Heading__Heading___83D3K css-acwcvw"
             data-test-id="cf-ui-heading"
           >
             Configuration
@@ -148,7 +148,7 @@ exports[`AppView when the app is not installed should render the app view with i
             To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
           </p>
           <div
-            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
             data-test-id="content-type-name"
           >
             <div
@@ -195,7 +195,7 @@ exports[`AppView when the app is not installed should render the app view with i
             </div>
           </div>
           <div
-            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
             data-test-id="content-type-id"
           >
             <div
@@ -264,7 +264,7 @@ exports[`AppView when the app is not installed when the app is installed should 
           class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
         >
           <h1
-            class="Heading__Heading___83D3K"
+            class="Heading__Heading___83D3K css-acwcvw"
             data-test-id="cf-ui-heading"
           >
             About Image Meta
@@ -284,7 +284,7 @@ exports[`AppView when the app is not installed when the app is installed should 
           class="Form__Form__item___2qOZE Form__Form__item--default___1CHMK"
         >
           <h1
-            class="Heading__Heading___83D3K"
+            class="Heading__Heading___83D3K css-acwcvw"
             data-test-id="cf-ui-heading"
           >
             Configuration
@@ -296,7 +296,7 @@ exports[`AppView when the app is not installed when the app is installed should 
             To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
           </p>
           <div
-            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
             data-test-id="content-type-name"
           >
             <div
@@ -343,7 +343,7 @@ exports[`AppView when the app is not installed when the app is installed should 
             </div>
           </div>
           <div
-            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+            class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
             data-test-id="content-type-id"
           >
             <div

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Heading, Paragraph, TextField } from '@contentful/forma-36-react-components';
 
+import { styles } from './styles';
+
 export function InstallationContent({
   allContentTypesIds,
   contentTypeId,
@@ -15,12 +17,13 @@ export function InstallationContent({
 
   return (
     <>
-      <Heading>Configuration</Heading>
+      <Heading className={styles.heading}>Configuration</Heading>
       <Paragraph>
         To help you get started, we are going to create a content type for you with a title field,
         an image field and a image tags field.
       </Paragraph>
       <TextField
+        className={styles.input}
         labelText="Content type name"
         name="contentTypeName"
         textInputProps={{
@@ -35,6 +38,7 @@ export function InstallationContent({
         required
       />
       <TextField
+        className={styles.input}
         labelText="Content type ID"
         name="contentTypeId"
         helpText="The ID is generated from the name, you can also set it manually"

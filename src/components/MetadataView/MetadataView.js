@@ -1,6 +1,8 @@
 import React from 'react';
-import { Paragraph, Button, Note, CheckboxField } from '@contentful/forma-36-react-components';
+import { Button, Note, CheckboxField } from '@contentful/forma-36-react-components';
 import get from 'lodash/get';
+
+import { styles } from './styles';
 
 async function callAPI(url) {
   const res = await fetch(`${process.env.REACT_APP_API_URL}/exif${url}`);
@@ -109,14 +111,14 @@ export class MetadataView extends React.Component {
     let hasImageError = !this.state.isMissingImage && (this.state.unsupportedImageType || this.state.imageRequirementsNotMet)
     let imageErrorMsg = this.state.unsupportedImageType ? "Unfortunately, we can only auto-tag PNG and JPG file types" : "Please make sure your image is less than 5MB and has dimensions of at least 80px for both width and height";
 
-    return <div>
-      <Paragraph>Hello Sidebar Component</Paragraph>
+    return <div className={styles.inputWrapper}>
       {
         hasImageError &&
-        <Note noteType="warning">{imageErrorMsg}</Note>
+        <Note noteType="warning" className={styles.fileWarning}>{imageErrorMsg}</Note>
       }
       <Button
         id="fetch-tag-btn"
+        className={styles.btn}
         buttonType="primary"
         type="button"
         disabled={this.state.isMissingImage || hasImageError}

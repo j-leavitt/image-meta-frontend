@@ -2,15 +2,11 @@
 
 exports[`MetadataView sidebar component Calling metadata API should fetch tags and render them on btn click 1`] = `
 <div>
-  <div>
-    <p
-      class="Paragraph__Paragraph___2aO-9"
-      data-test-id="cf-ui-paragraph"
-    >
-      Hello Sidebar Component
-    </p>
+  <div
+    class="css-qslnu8"
+  >
     <button
-      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO"
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp css-acwcvw Button__Button--primary___JImeO"
       data-test-id="cf-ui-button"
       id="fetch-tag-btn"
       type="button"
@@ -104,15 +100,11 @@ exports[`MetadataView sidebar component Calling metadata API should fetch tags a
 
 exports[`MetadataView sidebar component should disable everything if theres no image 1`] = `
 <div>
-  <div>
-    <p
-      class="Paragraph__Paragraph___2aO-9"
-      data-test-id="cf-ui-paragraph"
-    >
-      Hello Sidebar Component
-    </p>
+  <div
+    class="css-qslnu8"
+  >
     <button
-      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO Button__Button--disabled___1E20M"
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp css-acwcvw Button__Button--primary___JImeO Button__Button--disabled___1E20M"
       data-test-id="cf-ui-button"
       disabled=""
       id="fetch-tag-btn"
@@ -159,15 +151,11 @@ exports[`MetadataView sidebar component should disable everything if theres no i
 
 exports[`MetadataView sidebar component should enable everything if theres an image 1`] = `
 <div>
-  <div>
-    <p
-      class="Paragraph__Paragraph___2aO-9"
-      data-test-id="cf-ui-paragraph"
-    >
-      Hello Sidebar Component
-    </p>
+  <div
+    class="css-qslnu8"
+  >
     <button
-      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp Button__Button--primary___JImeO"
+      class="Button__Button___1ZfFj a11y__focus-border--default___60AXp css-acwcvw Button__Button--primary___JImeO"
       data-test-id="cf-ui-button"
       id="fetch-tag-btn"
       type="button"

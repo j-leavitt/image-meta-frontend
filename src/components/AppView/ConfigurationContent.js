@@ -1,11 +1,13 @@
 import React from 'react';
 import { List, ListItem, Heading, Paragraph } from '@contentful/forma-36-react-components';
 
+import { styles } from './styles'
+
 export const ConfigurationContent = () => (
   <>
-    <Heading>Getting started</Heading>
+    <Heading className={styles.heading}>Getting started</Heading>
     <Paragraph>Follow these steps to create a new image entry with automatically populated metadata:</Paragraph>
-    <List>
+    <List className={styles.list}>
       <ListItem>Go to the &quot;Content&quot; page</ListItem>
       <ListItem>
         Create a new entry of type &quot;Photo with Meta&quot; (or the name you chose during
@@ -14,6 +16,8 @@ export const ConfigurationContent = () => (
       <ListItem>Select an image to associate with the entry</ListItem>
       <ListItem>In the entry sidebar, click the &quot;Autofill Metadata&quot; button</ListItem>
     </List>
+
+    <hr className={styles.splitter} />
 
     <Heading>Uninstallation and cleanup</Heading>
     <Paragraph>
