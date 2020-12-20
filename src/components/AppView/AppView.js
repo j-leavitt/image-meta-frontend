@@ -16,6 +16,12 @@ const makeContentType = (contentTypeId, contentTypeName) => ({
   displayField: 'title',
   fields: [
     {
+      id: 'internalID',
+      name: 'Internal ID',
+      required: true,
+      type: 'Symbol'
+    },
+    {
       id: 'title',
       name: 'Title',
       required: true,
@@ -52,6 +58,11 @@ const makeContentType = (contentTypeId, contentTypeName) => ({
       id: 'width',
       name: 'Width',
       type: 'Integer'
+    },
+    {
+      id: 'location',
+      name: 'Location',
+      type: 'Location'
     }
   ]
 });
