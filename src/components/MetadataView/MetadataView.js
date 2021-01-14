@@ -17,50 +17,22 @@ export class MetadataView extends React.Component {
     const { fields } = props.sdk.entry;
 
     this.state = {
-      value: "",
       overwrite: true,
       isMissingImage: !fields.image.getValue(),
-      unsupportedImageType: false,
-      imageRequirementsNotMet: false,
       isFetchingTags: false
     }
   }
 
   componentDidMount() {
+    // obtain image info from Contentful sdk
     const { image } = this.props.sdk.entry.fields;
 
+    // keep track of whether or not an image is currently associated with the entry
     image.onValueChanged(() => {
       this.setState(() => ({
         isMissingImage: !image.getValue()
       }));
-      // always validate the image
-      this.validateImage();
     });
-  }
-
-  validateImage = async () => {
-    const { sdk } = this.props;
-    const { image } = sdk.entry.fields;
-    const imageId = get(image.getValue(), 'sys.id');
-    if (!imageId) { return; }
-
-    // const file = await sdk.space.getAsset(imageId);
-    // const locale = sdk.locales.default;
-    // const contentType = get(file, `fields.file.${locale}.contentType`);
-    // const details = get(file, `fields.file.${locale}.details`);
-
-    // test if file extension is PNG/JPEG/JPG
-    // const isImageTypeValid = new RegExp(/^image\/(png|jpe?g)$/, 'i').test(contentType);
-    const isImageTypeValid = true;
-    // const isImageIncompatible = details.size > MAX_FILE_SIZE ||
-    //                             details.width < MIN_DIMENSION_SIZE ||
-    //                             details.height < MIN_DIMENSION_SIZE;
-    const isImageIncompatible = false;
-
-    this.setState(() => ({
-      unsupportedImageType: !isImageTypeValid,
-      imageRequirementsNotMet: isImageIncompatible
-    }))
   }
 
   toggleOverwrite = () => {
@@ -69,7 +41,9 @@ export class MetadataView extends React.Component {
     }));
   }
 
-  updateTags = async (tags) => {
+  // uses values returned from API to update all entry fields, if the field name is present
+  // in the data
+  updateTags = async (tags) => {  
     for (const [fieldName, field] of Object.entries(this.props.sdk.entry.fields)) {
       if (tags[fieldName]) {
         await field.setValue(tags[fieldName]);
@@ -77,9 +51,11 @@ export class MetadataView extends React.Component {
     }
   }
 
+  // retreives image metadata from API by providing API with image path
   fetchTags = async () => {
     const { sdk } = this.props;
 
+    // get image path using image data extracted from sdk
     const imageId = get(sdk.entry.fields.image.getValue(), 'sys.id')
     const file = await sdk.space.getAsset(imageId);
     const locale = sdk.locales.default;
@@ -89,9 +65,6 @@ export class MetadataView extends React.Component {
 
     try {
       const exifTags = await callAPI(imagePath);
-
-      // upload new tags
-      // const newTags = this.state.overwrite ? aiTags : [...aiTags, ...this.state.tags];
       const newTags = { ...exifTags }
       this.updateTags(newTags);
     } catch (e) {
@@ -101,27 +74,14 @@ export class MetadataView extends React.Component {
     }
   }
 
-  updateValue = (e) => {
-    this.setState({
-      value: e.target.value
-    });
-  }
-
   render() {
-    let hasImageError = !this.state.isMissingImage && (this.state.unsupportedImageType || this.state.imageRequirementsNotMet)
-    let imageErrorMsg = this.state.unsupportedImageType ? "Unfortunately, we can only auto-tag PNG and JPG file types" : "Please make sure your image is less than 5MB and has dimensions of at least 80px for both width and height";
-
     return <div className={styles.inputWrapper}>
-      {
-        hasImageError &&
-        <Note noteType="warning" className={styles.fileWarning}>{imageErrorMsg}</Note>
-      }
       <Button
         id="fetch-tag-btn"
         className={styles.btn}
         buttonType="primary"
         type="button"
-        disabled={this.state.isMissingImage || hasImageError}
+        disabled={this.state.isMissingImage}
         loading={this.state.isFetchingTags}
         onClick={this.fetchTags}
       >
@@ -130,7 +90,7 @@ export class MetadataView extends React.Component {
       <CheckboxField
         id="overwrite-tags"
         labelText="Overwrite existing metadata"
-        disabled={this.state.isMissingImage || hasImageError}
+        disabled={this.state.isMissingImage}
         checked={this.state.overwrite}
         onChange={this.toggleOverwrite}
       />

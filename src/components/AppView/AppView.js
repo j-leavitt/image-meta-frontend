@@ -8,6 +8,7 @@ import { styles } from './styles';
 import { InstallationContent } from './InstallationContent';
 import { ConfigurationContent } from './ConfigurationContent';
 
+// define fields for image and associated metadata
 const makeContentType = (contentTypeId, contentTypeName) => ({
   sys: {
     id: contentTypeId
