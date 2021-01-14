@@ -145,7 +145,7 @@ exports[`AppView when the app is not installed should render the app view with i
             class="Paragraph__Paragraph___2aO-9"
             data-test-id="cf-ui-paragraph"
           >
-            To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
+            To help you get started, we are going to create a content type for you with an image field and fields for image metadata.
           </p>
           <div
             class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"
@@ -293,7 +293,7 @@ exports[`AppView when the app is not installed when the app is installed should 
             class="Paragraph__Paragraph___2aO-9"
             data-test-id="cf-ui-paragraph"
           >
-            To help you get started, we are going to create a content type for you with a title field, an image field and a image tags field.
+            To help you get started, we are going to create a content type for you with an image field and fields for image metadata.
           </p>
           <div
             class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK css-15g2oxy"

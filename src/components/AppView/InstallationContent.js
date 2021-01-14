@@ -19,8 +19,8 @@ export function InstallationContent({
     <>
       <Heading className={styles.heading}>Configuration</Heading>
       <Paragraph>
-        To help you get started, we are going to create a content type for you with a title field,
-        an image field and a image tags field.
+        To help you get started, we are going to create a content type for you with
+        an image field and fields for image metadata.
       </Paragraph>
       <TextField
         className={styles.input}
