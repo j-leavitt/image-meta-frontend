@@ -1,3 +1,5 @@
+# image-meta-frontend
+
 A [Contentful app](https://www.contentful.com/developers/docs/extensibility/app-framework/) for retrieving and filling entry fields with image metadata. It retrieves image metadata using the [associated image metadata API](https://github.com/j-leavitt/image-meta-api). The API service must be running at the API URL set in this app's environment in order for the app to function properly.
 
 Upon installation, this instantiation of the app creates a single Contentful content type as an image asset wrapper to associate its image metadata fields with the image. The metadata is retrieved from the API via user interaction with the entry sidebar for a given entry of the content type.
